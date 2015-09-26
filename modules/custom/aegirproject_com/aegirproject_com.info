@@ -2,6 +2,7 @@ name = AegirProject.com
 description = Simple brochure site for the Aegir Support Cooperative
 core = 7.x
 package = Features
+dependencies[] = aegirproject_com_about_page
 dependencies[] = aegirproject_com_front_page
 dependencies[] = ctools
 dependencies[] = service_plan

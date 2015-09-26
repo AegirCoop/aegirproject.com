@@ -14,4 +14,3 @@ features[page_manager_pages][] = front_page
 features[variable][] = site_frontpage
 features[variable][] = site_name
 features[variable][] = theme_aegirproject_com_settings
-project path = sites/ergonlogic.git2.aegir3.devekko.io/modules/custom

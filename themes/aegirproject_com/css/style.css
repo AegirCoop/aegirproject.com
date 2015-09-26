@@ -5,9 +5,14 @@
 /**
  * Front-page jumbotron.
  */
-.container.main-container {
-  padding: 0;
-  width: 100%;
+.row > section > h1,
+.row > section > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row > section {
+  padding-left: 0;
+  padding-right: 0;
 }
 h1.page-header,
 .container .jumbotron, .container-fluid .jumbotron {
@@ -63,7 +68,7 @@ body.navbar-is-fixed-top {
 .view-subscription-plans .views-table .views-field-field-advanced-features,
 .view-subscription-plans .views-table .views-field-field-experimental-features,
 /* Volume */
-.view-subscription-plans .views-table .views-field-field-tickets-per-year,
+.view-subscription-plans .views-table .views-field-field-tickets-per-year-per-cpu,
 .view-subscription-plans .views-table .views-field-field-get-additional-tickets,
 .view-subscription-plans .views-table .views-field-field-designated-contacts {
   background-color: lightgrey;
@@ -72,49 +77,27 @@ body.navbar-is-fixed-top {
 /**
  * Support plans
  */
-.view-subscription-plans .views-view-grid td {
+.view-subscription-plans.view-id-subscription_plans .col {
   text-align: center;
   padding: 0px 10px 80px 10px;
   margin: 10px;
   background-color: lightgrey;
   vertical-align: top;
-}
-.view-subscription-plans table.views-view-grid {
-  border-spacing: 20px;
-  border-collapse: separate;
-}
-.view-subscription-plans div.views-field-title {
-  font-weight: bold;
-}
-/* Position features */
-.view-subscription-plans div.views-field-field-stable-software-updates,
-.view-subscription-plans div.views-field-field-advance-security-notificat,
-.view-subscription-plans div.views-field-field-required-and-optional-feat,
-.view-subscription-plans div.views-field-field-advanced-features,
-.view-subscription-plans div.views-field-field-support-via-community-foru,
-.view-subscription-plans div.views-field-field-support-via-email-portal,
-.view-subscription-plans div.views-field-field-support-via-remote-ssh,
-.view-subscription-plans div.views-field-field-tickets-per-year-per-cpu,
-.view-subscription-plans div.views-field-field-response-time {
-  position: relative;
-  top: 10px;
+  max-width: 50%;
 }
 /* Highlight items new to this support level */
-.view-subscription-plans .col-3 div.views-field-field-advance-security-notificat,
-.view-subscription-plans .col-4 div.views-field-field-advanced-features,
-.view-subscription-plans .col-2 div.views-field-field-support-via-email-portal,
-.view-subscription-plans .col-3 div.views-field-field-support-via-remote-ssh,
-.view-subscription-plans .col-2 div.views-field-field-tickets-per-year-per-cpu,
-.view-subscription-plans .col-3 div.views-field-field-tickets-per-year-per-cpu,
-.view-subscription-plans .col-4 div.views-field-field-tickets-per-year-per-cpu,
-.view-subscription-plans .col-2 div.views-field-field-response-time {
+.view-subscription-plans div.views-field-field-advance-security-notificat.plan-Standard,
+.view-subscription-plans div.views-field-field-advanced-features.plan-Premium,
+.view-subscription-plans div.views-field-field-support-via-email-portal.plan-Basic,
+.view-subscription-plans div.views-field-field-support-via-remote-ssh.plan-Standard,
+.view-subscription-plans div.views-field-field-tickets-per-year-per-cpu.plan-Basic,
+.view-subscription-plans div.views-field-field-tickets-per-year-per-cpu.plan-Standard,
+.view-subscription-plans div.views-field-field-tickets-per-year-per-cpu.plan-Premium,
+.view-subscription-plans div.views-field-field-response-time.plan-Basic {
   font-style: italic;
 }
 /* Anchor price field for absolute positioning */
-.view-subscription-plans td.col-1,
-.view-subscription-plans td.col-2,
-.view-subscription-plans td.col-3,
-.view-subscription-plans td.col-4 {
+.view-subscription-plans .col {
   position: relative
 }
 .view-subscription-plans div.views-field-field-monthly-price {
@@ -128,4 +111,19 @@ body.navbar-is-fixed-top {
   border-radius: 10px;
   display: inline-block;
   padding: 5px;
+}
+/* Enterprise plan footer */
+.view-subscription-plans div.view-footer {
+  font-weight: bold;
+}
+
+/**
+ * Navigtion menu
+ */
+.navbar-default .navbar-nav > li > a {
+  font-size: large;
+}
+.navbar-nav {
+  float: right;
+  margin-right: 5%;
 }

@@ -55,7 +55,7 @@ function aegirproject_com_about_page_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'bootstrap_threecol_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -70,7 +70,7 @@ function aegirproject_com_about_page_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-2123637b-4f2f-46a1-8883-de729d12ad7f';
-    $pane->panel = 'middle';
+    $pane->panel = 'top';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -95,10 +95,10 @@ function aegirproject_com_about_page_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '2123637b-4f2f-46a1-8883-de729d12ad7f';
     $display->content['new-2123637b-4f2f-46a1-8883-de729d12ad7f'] = $pane;
-    $display->panels['middle'][0] = 'new-2123637b-4f2f-46a1-8883-de729d12ad7f';
+    $display->panels['top'][0] = 'new-2123637b-4f2f-46a1-8883-de729d12ad7f';
     $pane = new stdClass();
     $pane->pid = 'new-d5294692-cbd4-4894-a7aa-d085c1c29027';
-    $pane->panel = 'middle';
+    $pane->panel = 'top';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -123,7 +123,7 @@ function aegirproject_com_about_page_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'd5294692-cbd4-4894-a7aa-d085c1c29027';
     $display->content['new-d5294692-cbd4-4894-a7aa-d085c1c29027'] = $pane;
-    $display->panels['middle'][1] = 'new-d5294692-cbd4-4894-a7aa-d085c1c29027';
+    $display->panels['top'][1] = 'new-d5294692-cbd4-4894-a7aa-d085c1c29027';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

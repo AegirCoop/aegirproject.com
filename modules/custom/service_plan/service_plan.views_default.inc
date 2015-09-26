@@ -30,8 +30,8 @@ function service_plan_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '5';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
+  $handler->display->display_options['style_options']['columns'] = '6';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -215,7 +215,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['label'] = 'Enterprise';
-  $handler->display->display_options['footer']['area']['content'] = 'Need more? contact us to discuss our Enterprise plan.';
+  $handler->display->display_options['footer']['area']['content'] = 'Need more? <a href="">Contact us</a> to discuss our Enterprise plans.';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -236,6 +236,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_stable_software_updates']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_stable_software_updates']['alter']['text'] = 'Stable software updates';
   $handler->display->display_options['fields']['field_stable_software_updates']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_stable_software_updates']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_stable_software_updates']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_stable_software_updates']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_stable_software_updates']['type'] = 'list_key';
@@ -248,6 +249,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['alter']['text'] = ' Access to pre-built images';
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_access_to_pre_built_images']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['type'] = 'list_key';
@@ -259,6 +261,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_advance_security_notificat']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_advance_security_notificat']['alter']['text'] = 'Advance security notifications';
   $handler->display->display_options['fields']['field_advance_security_notificat']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_advance_security_notificat']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_advance_security_notificat']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_advance_security_notificat']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_advance_security_notificat']['type'] = 'list_key';
@@ -270,6 +273,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_required_and_optional_feat']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_required_and_optional_feat']['alter']['text'] = 'Optional features';
   $handler->display->display_options['fields']['field_required_and_optional_feat']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_required_and_optional_feat']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_required_and_optional_feat']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_required_and_optional_feat']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_required_and_optional_feat']['type'] = 'list_key';
@@ -281,6 +285,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_advanced_features']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_advanced_features']['alter']['text'] = 'Advanced features';
   $handler->display->display_options['fields']['field_advanced_features']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_advanced_features']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_advanced_features']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_advanced_features']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_advanced_features']['type'] = 'list_key';
@@ -292,6 +297,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_experimental_features']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_experimental_features']['alter']['text'] = 'Experimental features';
   $handler->display->display_options['fields']['field_experimental_features']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_experimental_features']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_experimental_features']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_experimental_features']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_experimental_features']['type'] = 'list_key';
@@ -303,6 +309,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_via_community_foru']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_community_foru']['alter']['text'] = 'Support via community forum';
   $handler->display->display_options['fields']['field_support_via_community_foru']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_support_via_community_foru']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_support_via_community_foru']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_community_foru']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_community_foru']['type'] = 'list_key';
@@ -314,6 +321,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_via_email_portal']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_email_portal']['alter']['text'] = 'Support via email/portal';
   $handler->display->display_options['fields']['field_support_via_email_portal']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_support_via_email_portal']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_support_via_email_portal']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_email_portal']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_email_portal']['type'] = 'list_key';
@@ -325,6 +333,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_via_remote_ssh']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_remote_ssh']['alter']['text'] = 'Support via remote SSH';
   $handler->display->display_options['fields']['field_support_via_remote_ssh']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_support_via_remote_ssh']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_support_via_remote_ssh']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_remote_ssh']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_remote_ssh']['type'] = 'list_key';
@@ -336,6 +345,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['alter']['text'] = 'Support via phone/hangout';
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_support_via_phone_hangout']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['type'] = 'list_key';
@@ -347,12 +357,14 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['alter']['text'] = '[field_tickets_per_year_per_cpu] tickets per year';
   $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['element_wrapper_class'] = 'plan-[title]';
   /* Field: Content: Get additional tickets */
   $handler->display->display_options['fields']['field_get_additional_tickets']['id'] = 'field_get_additional_tickets';
   $handler->display->display_options['fields']['field_get_additional_tickets']['table'] = 'field_data_field_get_additional_tickets';
   $handler->display->display_options['fields']['field_get_additional_tickets']['field'] = 'field_get_additional_tickets';
   $handler->display->display_options['fields']['field_get_additional_tickets']['label'] = 'Additional tickets';
   $handler->display->display_options['fields']['field_get_additional_tickets']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_get_additional_tickets']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_get_additional_tickets']['hide_empty'] = TRUE;
   /* Field: Content: Support schedule */
   $handler->display->display_options['fields']['field_support_schedule']['id'] = 'field_support_schedule';
@@ -364,8 +376,8 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_schedule']['alter']['text'] = '([field_support_schedule])';
   $handler->display->display_options['fields']['field_support_schedule']['alter']['trim_whitespace'] = TRUE;
   $handler->display->display_options['fields']['field_support_schedule']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_support_schedule']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_support_schedule']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_support_schedule']['type'] = 'text_plain';
   /* Field: Content: Response time */
   $handler->display->display_options['fields']['field_response_time']['id'] = 'field_response_time';
   $handler->display->display_options['fields']['field_response_time']['table'] = 'field_data_field_response_time';
@@ -374,6 +386,7 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_response_time']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_response_time']['alter']['text'] = '[field_response_time] [field_support_schedule]';
   $handler->display->display_options['fields']['field_response_time']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_response_time']['element_wrapper_class'] = 'plan-[title]';
   $handler->display->display_options['fields']['field_response_time']['hide_empty'] = TRUE;
   /* Field: Content: Price */
   $handler->display->display_options['fields']['field_monthly_price']['id'] = 'field_monthly_price';

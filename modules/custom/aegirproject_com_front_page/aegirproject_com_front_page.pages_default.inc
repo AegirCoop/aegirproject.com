@@ -44,7 +44,7 @@ function aegirproject_com_front_page_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'bootstrap_threecol_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -60,7 +60,7 @@ function aegirproject_com_front_page_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-953af7e5-82c7-4ac7-ac60-54fbb3aaff36';
-    $pane->panel = 'middle';
+    $pane->panel = 'top';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -91,7 +91,7 @@ function aegirproject_com_front_page_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '953af7e5-82c7-4ac7-ac60-54fbb3aaff36';
     $display->content['new-953af7e5-82c7-4ac7-ac60-54fbb3aaff36'] = $pane;
-    $display->panels['middle'][0] = 'new-953af7e5-82c7-4ac7-ac60-54fbb3aaff36';
+    $display->panels['top'][0] = 'new-953af7e5-82c7-4ac7-ac60-54fbb3aaff36';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
