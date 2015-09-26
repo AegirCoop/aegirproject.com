@@ -71,11 +71,11 @@ function aegirproject_com_front_page_default_page_manager_pages() {
       'body' => '[jumbotron title="Open Source Hosting for Everyone"]
 <p>Support services for Drupal hosting on Aegir</p>
 [container]
-[img responsive="true" xclass="jumbotron-icons"] <img src="https://www.drupal.org/files/druplicon.small_.png" /> [/img]
+[img responsive="true" xclass="jumbotron-icons"] <img src="files/druplicon_small.png" /> [/img]
 [icon xclass="glyphicon glyphicon-arrow-right" /]
-[img responsive="true" xclass="jumbotron-icons"] <img src="http://cdn2.hubspot.net/hub/203683/file-3033812179-jpg/blog-files/drush20logo.jpg" /> [/img]
+[img responsive="true" xclass="jumbotron-icons"] <img src="files/drush_logo.jpg" /> [/img]
 [icon xclass="glyphicon glyphicon-arrow-right" /]
-[img responsive="true" xclass="jumbotron-icons aegir-icon"] <img src="sites/ergonlogic.git2.aegir3.devekko.io/themes/aegirproject_com/assets/aegir_logo_notext.png" /> [/img]
+[img responsive="true" xclass="jumbotron-icons aegir-icon"] <img src="files/aegir_logo_notext.png" /> [/img]
 [/container]
 [/jumbotron]',
       'format' => 'shortcodes',
