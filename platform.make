@@ -24,7 +24,10 @@ projects[views_flipped_table][subdir] = "contrib"
 projects[views_flipped_table][version] = "1.0"
 
 projects[bs_shortcodes][subdir] = "contrib"
-projects[bs_shortcodes][version] = "7.x-1.0-beta3"
+projects[bs_shortcodes][version] = "1.0-beta3"
 projects[shortcode][subdir] = "contrib"
-projects[shortcode][version] = "7.x-2.22"
+projects[shortcode][version] = "2.22"
+
+projects[panels_bootstrap_layouts][subdir] = "contrib"
+projects[panels_bootstrap_layouts][version] = "3.0"
 
