@@ -1,0 +1,28 @@
+core: 7.x
+api: 2
+defaults:
+  projects:
+    subdir: contrib
+projects:
+  drupal:
+    patch:
+      2496173: 'https://www.drupal.org/files/issues/drupal-clean_up_temp_files-2496173-1-d7.patch'
+    type: core
+    version: '7.42'
+  rune:
+    type: profile
+    download:
+      url: 'https://github.com/poetic/rune.git'
+      type: git
+  bootstrap:
+    type: theme
+    version: '3.4'
+  views_flipped_table:
+    version: '1.0'
+  bs_shortcodes:
+    version: 1.0-beta3
+  shortcode:
+    version: '2.22'
+  panels_bootstrap_layouts:
+    version: '3.0'
+
