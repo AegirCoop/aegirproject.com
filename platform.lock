@@ -4,23 +4,30 @@ api = 2
 
 ; Core
 projects[drupal][subdir] = "contrib"
-projects[drupal][patch][2496173] = "https://www.drupal.org/files/issues/drupal-clean_up_temp_files-2496173-1-d7.patch"
+projects[drupal][patch][0] = "https://www.drupal.org/files/issues/drupal-clean_up_temp_files-2496173-1-d7.patch"
+projects[drupal][version] = "7.39"
 projects[drupal][type] = "core"
 
 ; Profiles
 projects[rune][type] = "profile"
 projects[rune][download][url] = "https://github.com/poetic/rune.git"
 projects[rune][download][type] = "git"
+projects[rune][download][tag] = "0.0.9"
 
 ; Themes
 projects[bootstrap][subdir] = "contrib"
+projects[bootstrap][version] = "3.1-beta3"
 projects[bootstrap][type] = "theme"
 
 ; Modules
 projects[views_flipped_table][subdir] = "contrib"
+projects[views_flipped_table][version] = "1.0"
 
 projects[bs_shortcodes][subdir] = "contrib"
+projects[bs_shortcodes][version] = "1.0-beta3"
 projects[shortcode][subdir] = "contrib"
+projects[shortcode][version] = "2.22"
 
 projects[panels_bootstrap_layouts][subdir] = "contrib"
+projects[panels_bootstrap_layouts][version] = "3.0"
 
